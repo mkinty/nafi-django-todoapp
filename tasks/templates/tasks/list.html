@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %} 
+Todo | Django
+{% endblock %}
+
+{% block content %}
+    <h3>To Do Tasks</h3>
+    <form method="POST" action="/">
+        {% csrf_token %}
+        {{form.title}}
+        <input class="btn btn-info submit" type="submit" name="Create Tasks">
+    </form>
+    {% for task in tasks %}
+        <div class="item-row">
+            <a class="btn btn-sm btn-info" href="{% url 'update_task' task.id %}">Update</a>
+            <a class="btn btn-sm btn-danger" href="{% url 'delete_task' task.id %}">Delete</a>
+        
+            {% if task.complete == True %}
+                <strike>{{ task }}</strike>
+            {% else %}
+                <span>{{ task }}</span>
+            {% endif %}   
+        </div>
+    {% endfor %}
+{% endblock content %}

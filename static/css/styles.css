@@ -1,0 +1,88 @@
+/* NAVBAR CSS START */
+
+.navbar{
+    background:#081a1f;
+    overflow:auto;
+    min-height: auto;
+    font-weight: bold;
+    color:#fafafa;
+
+}
+
+.navbar-brand, .nav-link, .nav-item {
+color: #fafafa !important;
+}
+
+.navbar li a:hover, .navbar li.active
+{
+  color: #30aaa4 !important;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon
+{
+  background-color: #081a1f !important;
+  border-radius: 5px;
+  border: 2px solid #081a1f;
+}
+
+.navbar-expand-lg .navbar-toggler, .navbar-toggler
+{
+  border-style: none;
+}
+
+/* NAVBAR CSS END */
+
+
+/* TASKS CSS  START*/
+
+.body-container{
+ background: #081a1f;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input:focus{
+outline: 0;
+opacity: 0.6;
+}
+
+.submit{
+  /* background-color: #6BA3E8 !important; */
+  margin-top: 10px;
+}
+
+.center-column{
+  width:600px;
+  margin: 20px auto;
+  padding:20px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+
+.item-row{
+  background-color: #008037;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+.btn-danger{
+  background-color: #ffae19 !important;
+  border-color: #e59400 !important;
+}
+.danger{
+  background-color: rgb(170, 41, 41) !important;
+  border-color: rgb(170, 41, 41) !important;
+}
+
+/* TASKS CSS  START*/

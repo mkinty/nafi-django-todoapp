@@ -1,0 +1,1 @@
+web: gunicorn todoappdjango.wsgi --log-file -

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %} 
+Delete| Item
+{% endblock %}
+
+{% block content %}
+<p>Estes vous sûr de vouloir supprimer "{{item}}" ? </p>
+<a class="btn btn-danger" href="{% url 'list' %}">Cancel</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input class="btn btn-danger submit danger" type="submit" name="Confirm">
+</form>
+{% endblock content %}
