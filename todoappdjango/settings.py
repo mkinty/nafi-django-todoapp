@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$s&^9h5p+_82b24@^d1=iyi671zr7sxw-(k7^qmz$3_i%-856l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['nafi-dapp.herokuapp.com', '127.0.0.1']
 
